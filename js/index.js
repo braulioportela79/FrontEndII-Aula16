@@ -103,7 +103,7 @@ function renderizarDadosUsuario(dados) {
         userImg.setAttribute('src', e.imagem.grande);
         userLogin.textContent = e.login.usuario;
         userName.textContent = `${e.nome.titulo} ${e.nome.primeiro} ${e.nome.utlimo}`;
-        userInfo.innerHTML = `Rua ${e.localizacao.rua}<br/>${e.localizacao.cidade} / ${e.localizacao.Estado}<br/>${e.localizacao.timezone.descricao}<br/>CEP: ${e.localizacao.postcode}`;
+        userInfo.innerHTML = `Endereço:<br/>Rua ${e.localizacao.rua}<br/>${e.localizacao.cidade} / ${e.localizacao.Estado}<br/>CEP: ${e.localizacao.postcode}<br/>${e.localizacao.timezone.descricao}<br/><br/>Telefone:<br/>${e.fone} / ${e.celular}`;
         userMail.textContent = e.email;
     });
 };
